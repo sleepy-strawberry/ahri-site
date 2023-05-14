@@ -29,7 +29,7 @@ section.header-logo {
   margin-right: 5%;
 }
 a {
-  color: rgb(116, 12, 12);
+  color: #8a2137;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -51,6 +51,7 @@ section.section-header {
 
 /* style głównego diva */
 div.main-div {
+  color: #8a2137;
   margin: 6% 8%;
   display: flex;
 }
@@ -77,8 +78,12 @@ h1 {
   text-align: center;
 }
 .main-div p {
+  color: #f9faf8;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.main-div p:nth-of-type(2) {
+  margin-top: -2%;
 }
 .pierwsza-czesc > button {
   margin: 0 35%;
@@ -89,6 +94,7 @@ h1 {
   font-family: inherit;
   font-size: inherit;
   transition: 0.3s ease;
+  color: #8a2137;
 }
 .pierwsza-czesc > button:hover {
   background-color: lightpink;
