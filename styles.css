@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  display: border-box;
+}
+body {
+  font-family: "Tilt Neon", cursive;
+  /* border: solid 2px red; */
+  background-color: lightblue;
+}
+/* style nagłówka */
+header {
+  font-family: "Tilt Neon", cursive;
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7% 0;
+  /* border: solid 2px red; */
+}
+h3 {
+  font-size: 24px;
+  color: #f9faf8;
+}
+section.header-logo {
+  font-weight: bold;
+  width: 30%;
+  margin-left: 20%;
+  margin-right: 5%;
+}
+a {
+  color: rgb(116, 12, 12);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: #f9faf8;
+}
+a:visited {
+  text-decoration: none;
+}
+section.section-header {
+  width: 70%;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  /* border: 2px solid red; */
+}
+/* koniec styli nagłówka */
+
+/* style głównego diva */
+div.main-div {
+  margin: 6% 8%;
+  display: flex;
+}
+.pierwsza-czesc {
+  flex-basis: 50%;
+  margin-right: 5%;
+  /* border: 2px solid red; */
+}
+.div-for-img {
+  width: 49%;
+  margin-top: -1.5%;
+}
+.div-for-img img {
+  margin: 5% 0 5%;
+  height: 45vh;
+  box-shadow: lightpink 0px 5px, rgba(236, 167, 177, 0.811) 0px 10px,
+    rgba(239, 151, 169, 0.342) 0px 15px, rgba(229, 146, 160, 0.274) 0px 20px,
+    rgba(137, 116, 119, 0.128) 0px 25px;
+  border-radius: 15px;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.main-div p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.pierwsza-czesc > button {
+  margin: 0 35%;
+  padding: 0.9% 10%;
+  background-color: #f9faf8;
+  border: none;
+  border-radius: 15px 50px;
+  font-family: inherit;
+  font-size: inherit;
+  transition: 0.3s ease;
+}
+.pierwsza-czesc > button:hover {
+  background-color: lightpink;
+}
+/* koniec styli głównego diva */
+
+/* media */
+@media (max-width: 1037px) {
+  div.main-div {
+    flex-direction: column;
+  }
+  .div-for-img {
+    margin: 0 auto;
+  }
+  .div-for-img img {
+    margin-top: 10%;
+    margin-left: -20%;
+  }
+}
