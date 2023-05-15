@@ -107,8 +107,8 @@ div.div-zdjecia {
   justify-content: space-around;
   align-items: center;
   height: 65vh;
-  border-top: 2px solid #f9faf8;
-  border-bottom: 2px solid #f9faf8;
+  border-top: 2px dotted #f9faf8;
+  border-bottom: 2px dotted #f9faf8;
 }
 div.zdjecie {
   width: 20%;
@@ -125,6 +125,12 @@ div.zdjecie img {
   width: 90%;
   border-radius: 7px;
   margin: 11px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+div.zdjecie img:hover {
+  opacity: 0.5;
 }
 h2.gallery-h2 {
   margin-left: 8%;
@@ -135,9 +141,70 @@ div.zdjecie > p {
   color: #8a2137;
   margin-bottom: 10px;
 }
-
 /* koniec sekcji ze zdjęciami */
 
+/* początek sekcji z cytatem */
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+  /* margin-top: 20%; */
+  width: 100%;
+  height: 90%;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.for-quote {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+div.quote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 15rem;
+  background-color: #f9faf8;
+  opacity: 0.6;
+  border-radius: 7px;
+}
+p.seriously-quote {
+  margin: 12% 10%;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  color: #8a2137;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+span {
+  position: absolute;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+/* koniec sekcji z cytatem */
+
+div.for-signup {
+  border: 2px solid green;
+  line-height: 50vh;
+}
 /* media */
 @media (max-width: 1037px) {
   div.main-div {
@@ -149,5 +216,10 @@ div.zdjecie > p {
   .div-for-img img {
     margin-top: 10%;
     margin-left: -20%;
+  }
+  /* to nizej dopracowac bo sie rozsuwa galeria na widoku mobilnym */
+  div.div-zdjecia {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
